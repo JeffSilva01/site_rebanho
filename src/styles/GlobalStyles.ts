@@ -19,6 +19,10 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   :root {
     --primary: #f6a31c;
     --secondary: #581518;
