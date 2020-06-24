@@ -8,12 +8,15 @@ export const Container = styled.div`
   width: 100%;
   height: 45px;
 
+  padding: 20px;
+
   display: flex;
   justify-content: center;
 
   background-image: linear-gradient(-90deg, var(--secondary), var(--primary));
 
-  /* position: fixed; */
+  position: fixed;
+  z-index: 1;
 `;
 
 export const Content = styled.div`
