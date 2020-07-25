@@ -8,18 +8,21 @@ import fullBackground from '../../assets/full-background.svg';
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 900px;
+  max-width: 1120px;
+  height: calc(100vh - 45px);
   margin: auto;
+
+  background-color: red;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  > img {
-    width: 50%;
+  /* > img {
+    width: 350px;
     max-width: 500px;
-    margin-top: 7rem;
-  }
+    /* margin-top: 7rem; */
+  } */
 `;
 
 export const WhoWeAre = styled.div`

@@ -28,7 +28,9 @@ const LandingPage: React.FC = () => {
       <Container>
         <img src={logoRebanho} alt="Logo Rebanho" />
         <Banner />
+        <ImgCurvTop />
       </Container>
+
       <WhoWeAre>
         <ImgCurvTop />
         <WhoWeAreContainer>

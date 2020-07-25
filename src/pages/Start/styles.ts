@@ -9,24 +9,35 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
+  padding: auto 50px;
+
   background-color: var(--primary);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+
+  position: relative;
 
   img {
-    width: 600px;
+    max-width: 80%;
+    height: 70%;
+    margin: auto auto 15px auto;
   }
 
   nav {
-    margin-right: 50px;
-    margin-left: auto;
+    top: 50px;
+    position: absolute;
+
+    @media only screen and (min-width: 600px) {
+      right: 100px;
+    }
   }
 
   div {
     display: flex;
+    margin: auto;
   }
 
   a:not(:first-child) {
@@ -34,13 +45,14 @@ export const Container = styled.div`
 
     display: block;
 
-    width: 150px;
-    height: 30px;
+    width: 200px;
+    height: 45px;
 
     text-align: center;
     justify-content: center;
-    line-height: 30px;
+    line-height: 45px;
     text-transform: uppercase;
+    font-size: 24px;
 
     color: var(--white);
     background-color: #30b441;
@@ -48,8 +60,8 @@ export const Container = styled.div`
 `;
 
 export const SocialButton = styled.button<ButtonProps>`
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 
   background-color: ${(props) => props.backgroundColor};
 `;
@@ -57,13 +69,14 @@ export const SocialButton = styled.button<ButtonProps>`
 export const Enter = styled(Link)`
   display: block;
 
-  width: 150px;
-  height: 30px;
+  width: 200px;
+  height: 45px;
 
   text-align: center;
   justify-content: center;
-  line-height: 30px;
+  line-height: 45px;
   text-transform: uppercase;
+  font-size: 24px;
 
   color: var(--primary);
   background-color: var(--secondary);
